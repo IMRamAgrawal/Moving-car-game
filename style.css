@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    /* overflow: hidden; */
+    
+}
+body{
+    overflow: hidden;
+    animation: body1 1s linear infinite; 
+}
+.back{
+    /* Background-color:blue; */
+}
+
+.background{
+    margin:0;
+    padding:0;
+    width:110vw;
+    height:55vh;
+    position:relative;
+    /* z-index:4; */
+}
+.tree{
+    /* background-color: red; */
+}
+.trees{
+    margin-bottom: 0;
+    width:110vw;
+    height:40vh;
+    position:relative;
+    top:-250px;
+}
+.trac{
+    /* overflow: hidden; */
+    /* background-color: aqua; */
+}
+.track{
+    width:600vw;
+    height:40vh;
+    position:relative;
+    top:-260px;
+    z-index:4;
+    animation: track1 10s linear infinite; 
+}
+.car_body{
+    margin: auto;
+    /* background-color: brown; */
+    height:10vh;
+    /* width:24vh; */
+    position: relative;
+     top: -550px;
+     z-index:4;
+     animation: car1 .3s linear infinite;
+}
+.car_wheel_left{
+    margin-left: -236px;
+    width:45px;
+    /* background-color: darkviolet; */
+    position: relative;
+    top: -550px;
+    z-index:4;
+
+animation: left .7s linear infinite;
+}
+.car_wheel_right{
+    margin-left: 84px;
+    width:45px;
+    /* background-color:red; */
+    top: -550px;
+    position: relative;
+    z-index:4;
+    animation: right .7s linear infinite;
+}
+
+@keyframes left{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+   
+}
+@keyframes right{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+   
+}
+@keyframes track1{
+   100%{transform: translateX(-500vw);}
+}
+
+@keyframes car1{
+    0%{transform: translatey(-3.5px);}
+    50%{transform: translatey(1.5px);}
+    100%{transform: translatey(-3px);}
+    
+ }
+ @keyframes body1{
+    0%{transform: translatey(-5px);}
+    50%{transform: translatey(5px);}
+    100%{transform: translatey(-5px);}
+    
+ }
+
